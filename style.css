@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 *{
     margin: 0;
@@ -57,6 +58,10 @@ body{
     text-align: center;
     font: 0.8rem Arial, Helvetica, sans-serif;
     color: black;
+    position:fixed;
+    top: 7.5%;  
+    z-index: 50;
+    transition: top 0.1s ease;
 }
 .h-nav>div{
     display: inline-block;
@@ -133,3 +138,350 @@ body{
     background-color:#1B53BA ;
 }
 /* Header Ends */
+/* Main */
+main{
+    width: 100%;
+    height:2535px;
+    margin-top: 85px;
+    background-image: url(Images/body_bg.png); 
+}
+/* Body */
+.body{
+    box-sizing:content-box;
+    width:82%;
+    height: 98%;
+    margin:0px  auto;
+    background-color: white;
+    background-image: url(Images/container_bg.png);
+}
+.search-bar{
+    position:fixed;
+    width:60px;
+    height: 190px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    z-index: 5;
+    font: 0.8rem Arial, Helvetica, sans-serif;
+}
+.search-bar .profile{
+    width: 100%;
+    height: 65%;
+    border: 2px solid black;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-top-right-radius: 15px;
+    background-color:#4DAD5B;  
+}
+.search-bar .profile:hover{
+    background-color: #369143;
+}
+.profile img,.search img{
+    width:60%;
+    position: relative;
+    top: 20%;
+}
+.profile p{
+    margin-top: 25px;
+}
+.search-bar .search{
+    width: 100%;
+    height: calc(100% - 65%);
+    border: 2px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(96, 102, 96);
+}
+.search-bar .search:hover{
+    background-color: #30A7D7;
+}
+/* Big cars section */
+.b-card-sec{
+    width:75%;
+    height: 830px;
+    background-color:inherit;
+    margin:0px auto;
+    padding: 30px 15px 15px 15px ;
+    font: 23px Arial;
+    color: white;
+}
+/* For all Card boder radius, images radius, padding , moving effect*/
+.b-card-sec>div,.b-card-sec img{
+    border-radius:4px;
+}
+.b-card-sec>div>div:nth-child(2){
+    padding:15px ;
+}
+.b-card-sec>div:hover{
+    position: relative;
+    bottom:5px;
+    transition:0.5s ease;
+}
+.b-card-sec .card-image{
+    width: 100%;
+    height: 60%;
+}
+.b-card-sec img{
+    width: 100%;
+    height: 100%;
+}
+/* Card one */
+.b-card-sec .card-one{
+    width:65%;
+    height:510px;
+    margin-bottom: 15px;
+    background-color:rgb(238, 107, 47);
+    float: left;
+}
+.b-card-sec p{
+    width:75%;
+    margin-top: 15px;
+    color: black;
+    font-size:1.2rem;
+    text-align: left;
+    text-wrap:wrap;
+}
+.b-card-sec .e-mild-image{
+    width:190px;
+    vertical-align: middle;
+    position: relative;
+    bottom:34px;
+    left:70%;
+}
+.b-card-sec .card-one:hover{
+    background-color: #DA471B;
+    position: relative;
+} 
+/* card Two and Three */
+.b-card-sec .card-two,.b-card-sec .card-three{
+    width:32%;
+    height:320px;
+    background-color: #30a7d7;
+    float: left;
+    margin-left:15px ;
+}
+.b-card-sec .card-two:hover{
+    background-color:#1B82B1 ;
+}
+.left-card.card-two{
+    height:280px;
+    margin:0px 1px;
+    margin-top: -30px;
+    background-color: rgb(77, 173, 91);
+}
+.left-card.card-two:hover{
+    background-color: #369143;
+}
+.b-card-sec .card-three{
+    margin-top:15px;
+    height:150px;
+    background-color: #E6BC30;
+}
+.card-three>.card-image{
+    height: 20%;
+}
+.b-card-sec .card-three:hover{
+    background-color: #DAA31C;
+}
+
+.left-card.card-three>.card-image{
+    display: inline-block;
+    width:40%;
+    height: 100%;
+}
+.left-card.card-three>div:nth-child(2){
+    display: inline-block;
+    width: 57%;
+    height: 100%;
+    vertical-align: top;
+}
+/* card Four */
+.b-card-sec .card-four{
+    width: calc(64% /2);
+    height:255px;
+    background-color:rgb(255, 144, 196);
+    float: left;
+    clear:left;
+    margin-right: 13px;
+}
+.b-card-sec .card-four:hover{
+    background-color: #FF2A8E;
+}
+.card-four.left-card{
+    clear: none;
+    background-color: #1847D7;
+}
+.card-four.left-card:hover{ 
+    background-color:#1B53BA;
+}
+/* featured Pokemon Section */
+.featu-pokemon-sec{
+    width: 100%;
+    height: 480px;
+    margin-top: 40px;
+}
+/* button */
+.fea-button{
+    width: 20%;
+    height:50px;
+    margin-left: 160px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #242223;
+    font-size:1.3rem ;
+    color:#918F91;
+    text-align: center;
+    padding: 6px 0px ;
+    font-style: none;
+}
+.fea-button img{
+    vertical-align:middle;
+    width: 35px;
+    margin-right: 5px;
+}
+/* featured cards body */
+.featu-pokemon-body{
+    width:100%;
+    height:400px;
+    background-color: #242223;
+    text-align: center;
+}
+/* unactive card */
+.f-card{
+    display: inline-block;
+    width:21.3%;
+    height:100%;
+    margin: 0px;
+    vertical-align: top;
+}
+/* side cards */
+.side-cards{
+    width: 15%;
+}
+/* active card */
+.f-card-active{
+    display: inline-block;
+    width:26%;
+    height:110%;
+}
+/* image section of all card and active card*/
+.image-sec{
+    width: 100%;
+    height: 240px;
+    background-color:#606060 ;
+}
+.f-card-active .image-sec{
+    background-color: #474747;
+}
+/* image of cards all card and active card and two side cards */
+.f-card .image-sec img{
+    width:230px;
+    margin: 0px auto;
+    opacity: 0.5;
+}
+.f-card-active>.image-sec>img{
+    width: 85%;
+    position: relative;
+    bottom: 15%;
+    z-index: 2;
+    margin: 0px auto;
+}
+.f-card.side-cards:nth-child(1) img{
+    position: relative;
+    left: -20%;
+}
+.f-card.side-cards:last-child img{
+    position: relative;
+    width: 205px;
+}
+/* number heading in image section  of all card and lat card and active card*/
+.f-card .image-sec h1,.f-card-active  h1{
+    font-size: 4.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top:-220px;
+    opacity: 0.2;
+}
+.f-card.side-cards:last-child h1{
+    top: -200px;
+}
+.f-card-active h1{
+    top: -275px;
+    font-size: 6rem;
+    color: white;
+}
+/* images  descrption section of all card and active cards*/
+.f-card .image-descr{
+    width: 100%;
+    height:calc(100% - 240px) ;
+    background-color: #2F2F2F;
+}
+.f-card-active .image-descr{
+    width: 100%;
+    height: calc(100% - 240px);
+    background-color:#242223;
+    border-radius:0px 0px 10px 10px;
+}
+/* font styling of all cards */
+.image-descr{
+    font-size: 1.7rem;
+    color: white;
+    padding: 30px 15px;
+    text-align: left;
+}
+/* styling of active cards bottom part */
+.image-descr span:nth-child(2){
+    margin-left: 65%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.image-descr>div{
+    margin-top:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+}
+.image-descr div>div {
+    margin-bottom: 10px;
+}
+.image-descr div>div p{
+    display: inline-block;
+    width:100px;
+}
+.image-descr div>div div{
+    display: inline-block;
+}
+.image-descr button{
+    width: 70px;
+    height:25px;
+    color: white;
+    background-color:#A38823;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+.image-descr button:nth-child(2){
+    background-color:#FDD739;
+    color: black;
+}
+
+/* Footer */
+footer{
+    height: 500px;
+    background-color: #1B53BA;
+}
+footer div{
+    width: 300px;
+    height: 1000px;
+    background-color: lavender;
+    position: relative;
+
+}
+footer div>div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(110, 110, 160);
+    border: 2px solid black;
+    position: relative; 
+}
+footer div>div:nth-child(2){
+    background-color:rgb(48, 48, 90);
+}
