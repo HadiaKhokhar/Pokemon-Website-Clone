@@ -207,7 +207,7 @@ main{
     color: white;
 }
 /* For all Card boder radius, images radius, padding , moving effect*/
-.b-card-sec>div,.b-card-sec img{
+.b-card-sec>div{
     border-radius:4px;
 }
 .b-card-sec>div>div:nth-child(2){
@@ -222,9 +222,10 @@ main{
     width: 100%;
     height: 60%;
 }
-.b-card-sec img{
+.card-image img{
     width: 100%;
     height: 100%;
+    border-radius: 4px 4px 0px 0px;
 }
 /* Card one */
 .b-card-sec .card-one{
@@ -322,7 +323,7 @@ main{
     margin-top: 40px;
 }
 /* button */
-.fea-button{
+.fea-button,.exp-button{
     width: 20%;
     height:50px;
     margin-left: 160px;
@@ -345,7 +346,37 @@ main{
     height:400px;
     background-color: #242223;
     text-align: center;
+    position: relative;
 }
+.featu-pokemon-body:hover .arrows{
+    display: block;
+}
+/* Arrows body */
+.arrows{
+    display: none;
+    width: 80px;
+    height: 100px;
+    background-color:#424242;
+    opacity: 0.5;
+    border-radius: 10px;
+    position:absolute;
+    z-index: 1;
+}
+.arrows:hover{
+    opacity: 1;
+}
+div.arrows:nth-child(1){
+    left:4% ;
+    top: 30%;
+    background:no-repeat url(Images/slider-btns.png);
+}
+div.arrows:nth-child(2){
+    right:4%;
+    top: 30%;
+    background:no-repeat url(Images/slider-btns.png);
+    background-position:100% 100% ;
+}
+
 /* unactive card */
 .f-card{
     display: inline-block;
@@ -462,26 +493,207 @@ main{
     background-color:#FDD739;
     color: black;
 }
+/* explore more pokemon section */
+.exp-pokemon-section{
+    width: 73%;
+    height: calc(100% - 830px - 480px - 55px);
+    margin: 35px auto 0px auto;
+}
+/* Button */
+.exp-button{
+    width: 25%;
+    height: fit-content;
+    margin: 0px;
+    padding:15px 0px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    left: 75%;
+}
+/* Extra pokemon body card section */
+.exp-pokemon-card-sec{
+    width: 100%;
+    height: calc(100% - 52px - 50px);
+    background-color:white;
+    border-radius: 0px 0px 5px  5px;
+    position: relative;
+    top: 50px;
+}
+/* ideal card setting with image and descrption section */
+.exp-pokemon-cards{
+    width:30%;
+    height: 335px;
+    float:left;
+    margin: 5px 0px 20px 22px ;
+}
+.exp-pokemon-cards div.card-image{
+    width: 100%;
+    height: 160px;
+    background-color: #1847D7;
+    border-radius:5px 5px 0px 0px;
+}
 
+.exp-pokemon-cards div.image-descr{
+    width: 100%;
+    height: calc(100% - 150px);
+    background-color: #383c49;
+    border-radius: 0px 0px 5px 5px;
+    padding: 20px;
+    color: white;
+    font-size: 0.9rem;
+}
+.exp-pokemon-card-sec p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+/* Large cards */
+.exp-big-card{
+    height: 390px;
+}   
+/* Card 1 */
+.exp-pokemon-card-sec div:nth-child(1){
+    position: relative;
+    top: 5%;
+}
+.exp-pokemon-card-sec div:nth-child(1)>.image-descr{
+    background-color:#B38AEA;
+}
+.exp-pokemon-card-sec div:nth-child(1) p{
+    color:#4b1a8e ;
+}
+.exp-pokemon-card-sec div:nth-child(1)>.image-descr:hover{
+    background-color:#975FE2;
+}
+/* Card 2 */
+.exp-pokemon-card-sec div:nth-child(2){
+    position: relative;
+    top: 1%;
+}
+.exp-pokemon-card-sec div:nth-child(2)>.image-descr{
+    background-color: #FF514F;
+}
+.exp-pokemon-card-sec>div:nth-child(2) p{
+    color:#942d2b ;
+}
+.exp-pokemon-card-sec div:nth-child(2)>.image-descr:hover{
+    background-color:#FF1F1C;
+}
+/* Card 3 */
+.exp-pokemon-card-sec div:nth-child(3){
+    position: relative;
+    top: 3%;
+}
+.exp-pokemon-card-sec div:nth-child(3)>.image-descr{
+    background-color: #e6bc2f;
+}
+.exp-pokemon-card-sec>div:nth-child(3) p{
+    color:#212121;
+}
+.exp-pokemon-card-sec div:nth-child(3)>.image-descr:hover{
+    background-color:#DAA31C;
+}
+/* Card 4 */
+.exp-pokemon-card-sec div:nth-child(4){
+    position: relative;
+    top: -1%;
+    clear: left;
+}
+.exp-pokemon-card-sec div:nth-child(4)>.image-descr{
+    background-color: #4dad5b;
+}
+.exp-pokemon-card-sec>div:nth-child(4) p{
+    color:#305736;
+}
+.exp-pokemon-card-sec>div:nth-child() p{
+    color:#ccc;
+}
+.exp-pokemon-card-sec div:nth-child(4)>.image-descr:hover{
+    background-color:#369143;
+}
+/* item 5 */
+.exp-pokemon-card-sec .exp-card-text{
+    width: 250px;
+    height:80px;
+    position: relative;
+    left: 2%;
+    top: 2%;
+    float: left;
+}
+.exp-pokemon-card-sec div:nth-child(5)>p{
+    font-size: 2rem;
+    color: grey;
+    font-family:'Arial Narrow', Arial, sans-serif
+}
+/* Card 5*/
+.exp-pokemon-card-sec div:nth-child(6){
+    position: relative;
+    right: 26.5%;
+    top: 8%;
+}
+.exp-pokemon-card-sec div:nth-child(6)>.image-descr{
+    background-color:#313131;
+}
+.exp-pokemon-card-sec>div:nth-child(6) p{
+    color:#ccc;
+}
+.exp-pokemon-card-sec div:nth-child(6)>.image-descr:hover{
+    background-color:#282828;
+}
+/* Card 6 */
+.exp-pokemon-card-sec div:nth-child(7){
+    position: relative;
+    left: 64.5%;
+    top: -44%;
+}
+.exp-pokemon-card-sec div:nth-child(7)>.image-descr{
+    background-color: #1b53ba;
+}
+.exp-pokemon-card-sec>div:nth-child(7) p{
+    color:#30a7d7;
+}
+.exp-pokemon-card-sec div:nth-child(7)>.image-descr:hover{
+    background-color:#1847D7;
+}
+/* Card 7 */
+.exp-pokemon-card-sec div.exp-s-small-card{
+    width:280px;
+    height:140px;
+    float: left;
+    position: relative;
+    left: 34.5%;
+    top:-1%;
+    color: white;
+    font-size: 1rem;
+}
+div.exp-s-small-card>.card-image,div.exp-s-small-card>.image-descr{
+    width:100%;
+    height:50%;
+    position: static;
+    padding: 20px 0px 0px 10px;
+}
+div.exp-s-small-card>.card-image{
+    background-color: #ee6b2f;
+    border-radius: 5px 5px 0px 0px;
+}
+.exp-pokemon-card-sec div:nth-child(8)>.image-descr{
+    border-radius: 0px 0px 5px 5px;
+    background-color:#30a7d7;
+}
+.exp-pokemon-card-sec div:nth-child(8) p{
+    color:black;
+    margin-top: 0px;
+}
+
+.exp-pokemon-card-sec div:nth-child(8)>.image-descr:hover{
+    background-color:#1b82b1;
+}
+.exp-pokemon-card-sec>div:hover:not(.exp-card-text){
+    transform: translateY(-6px); /* Move the card 1px upwards on hover */
+    transition: transform 0.5s ease;
+}
 /* Footer */
 footer{
     height: 500px;
     background-color: #1B53BA;
-}
-footer div{
-    width: 300px;
-    height: 1000px;
-    background-color: lavender;
-    position: relative;
-
-}
-footer div>div{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(110, 110, 160);
-    border: 2px solid black;
-    position: relative; 
-}
-footer div>div:nth-child(2){
-    background-color:rgb(48, 48, 90);
 }
